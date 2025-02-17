@@ -32,7 +32,7 @@ html {
     text-decoration: none;    
   }
   img{
-  max-width: 100%;
+  width: 100%;
   }
   .contenedor{
     max-width: 120rem;
@@ -59,6 +59,7 @@ html {
   }
   .header__logo{
     margin: 3rem 0;/*margen arriba y abajo*/
+    max-width: 10%; /*Revisar esto, porque al poner en img mñas arriba  width: 100%, este tamaño hay que acotarlo*/
   }
     /*Footer*/
   .footer{
@@ -171,7 +172,13 @@ html {
       grid-column: 2 / 3;
     }
   }
+
+  /*productos.html*/
+
   /*Bloques*/
+  .camisa{
+    width: 100%;
+  }
   .bloques{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -225,5 +232,8 @@ html {
   .formulario__submit:hover{
     cursor: pointer;
     background-color: var(--secundarioOscuro);
+  }
+  .color_option{
+  color:var(--negro);
   }
 
